@@ -1,0 +1,20 @@
+{
+  "name": "modes-crc",
+  "version": "1.0.0",
+  "description": "A parity checker for ModeS transpoder messages",
+  "main": "lib/checker.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "adsb",
+    "crc",
+    "parity"
+  ],
+  "author": "Fábio Oliveira",
+  "repository": "https://github.com/foliveira/modes-crc",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^3.3.2"
+  }
+}
