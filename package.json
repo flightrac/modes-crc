@@ -4,7 +4,8 @@
   "description": "A parity checker for ModeS transpoder messages",
   "main": "lib/checker.js",
   "scripts": {
-    "test": "standard"
+    "codestyle": "jscs -p google lib/*.js",
+    "test": "node test/crc_checker.js"
   },
   "keywords": [
     "adsb",
@@ -15,6 +16,11 @@
   "repository": "https://github.com/foliveira/modes-crc",
   "license": "MIT",
   "devDependencies": {
-    "standard": "^3.3.2"
-  }
+    "jscs": "^1.13.1",
+    "pre-commit": "^1.0.7",
+    "tape": "^4.0.0"
+  },
+  "pre-commit": [
+    "codestyle"
+  ]
 }
