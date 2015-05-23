@@ -39,3 +39,5 @@ $ npm install modes-crc
 A port of antirez's dump1090, but in Node.js: https://github.com/antirez/dump1090/
 
 ## License
+
+Keeps the 3-Clause BSD License from the "parent" repository
