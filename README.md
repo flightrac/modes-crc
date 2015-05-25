@@ -13,19 +13,21 @@ A CRC implementation for ADS-B Mode-S messages
 Pass it a buffer to the actual ADSB packet and the number of bits in the packet.
 
 ```js
-var crc = require('modes-crc')
+var checker = require('modes-crc')
 
 var data = [93, 77, 32, 35, 122, 85, 166]
 
-var packetChecksum = crc.checksum(data, crc.MODES_SHORT_MSG)
+var packetChecksum = checker.checksum(data, checker.MODES_SHORT_MSG)
 ```
 
-It should output a checksum that should be equal to the result of the packet CRC obtained by
+It will do a parity check and output a checksum that should be equal to the result of the packet CRC obtained by
 
 ```js
-var bytes = crc.MODES_SHORT_MSG/8
+var checker = require('modes-crc')
 
-var packetCRC = (data[bytes - 3] << 16) | (data[bytes - 2] << 8) | data[bytes - 1];
+var data = [93, 77, 32, 35, 122, 85, 166]
+
+var packetCrc = checker.crc(data, checker.MODES_SHORT_MSG)
 ```
 
 ## Installation
