@@ -1,6 +1,6 @@
 {
   "name": "modes-crc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A parity checker for ModeS transpoder messages",
   "main": "lib/checker.js",
   "scripts": {
