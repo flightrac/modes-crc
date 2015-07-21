@@ -5,7 +5,7 @@
   "main": "lib/checker.js",
   "scripts": {
     "codestyle": "jscs -p google lib/*.js",
-    "test": "node test/*.js"
+    "test": "set -e; for t in test/*.js; do node $t; done"
   },
   "keywords": [
     "adsb",
@@ -13,7 +13,7 @@
     "parity"
   ],
   "author": "Fábio Oliveira",
-  "repository": "https://github.com/foliveira/modes-crc",
+  "repository": "https://github.com/planestrac/modes-crc",
   "license": "MIT",
   "devDependencies": {
     "jscs": "^1.13.1",
