@@ -3,7 +3,7 @@
 A CRC implementation for ADS-B Mode-S messages
 
 
-[![Build Status](https://travis-ci.org/foliveira/modes-crc.png)](https://travis-ci.org/foliveira/modes-crc)
+[![Build Status](https://travis-ci.org/flightrac/modes-crc.png)](https://travis-ci.org/flightrac/modes-crc)
 
 
 [![npm package](https://nodei.co/npm/modes-crc.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/modes-crc/)
