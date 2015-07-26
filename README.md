@@ -11,8 +11,41 @@ A CRC implementation for ADS-B Mode-S messages
 ## Installation
 
 ```bash
-$ npm install modes-crc
+$ npm install --save modes-crc
 ```
+## Documentation
+
+### Checker
+
+* [`checksum`](#checksum)
+* [`crc`](#crc)
+
+### Fixer
+
+* [`fix`](#fix)
+
+### Checker
+
+<a name="checksum" />
+### checksum(data, [bits])
+
+Calculates the checksum of the data frame passed to it, based on the parity table provided.
+
+---------------------------------------
+
+<a name="crc" />
+### crc(data, [bits])
+
+Extracts the CRC value from a data frame last 3 bytes.
+
+---------------------------------------
+
+### Fixer
+
+<a name="fix" />
+### fix(data, [bits])
+
+Tries to fix a single bit on a message by transversing it and xor'ing each bit and comparing that new message checksum with the original CRC value.
 
 ## Quick Examples
 
